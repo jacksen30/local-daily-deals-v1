@@ -83,3 +83,25 @@ body{
 .card-3{
 background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg")
 }
+
+
+@media (max-width: 450px) {
+  .card{
+    background: white;
+    width: 350px;
+    margin: 25px 0;
+  }
+
+  .cardcontainer{
+    padding: 60px 0 60px 0;
+  }
+
+  /* Cancel hover states for mobile */
+  .card:hover{
+    background-color: white;
+    cursor: none;
+    transform: scale(1);
+    transition: all 0.1s ease;
+  }
+
+}

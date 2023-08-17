@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(27, 27, 27);
+  min-height: 100%;
+}
+
+.logo{
+  padding-left: 10px;
+}
+
+
+
+.card h2{
+  padding-left: 10px;
+}
+
+.card h3{
+  padding-left: 10px;
+}
+
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 75px;
+}
+
+.card{
+  background: white;
+  width: 300px;
+  height: 465px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.card:hover{
+  background-color: rgb(255, 255, 102);
+  color: grey;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.1s ease;
+}
+
+.card-image{
+  background-color: yellow;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card p{
+  padding: 10px;
+  font-size: 18px;
+}
+
+.card a{
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  margin: 10px 40px 10px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.card-1{
+  background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg");
+  }
+
+.card-2{
+  background-image: url("https://www.simplyrecipes.com/thmb/1SXZ_F1GC6ww_ppWnrdbKgHi9fQ=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Butter-Chicken-LEAD-2-6ca76f24bbe74114a09958073cb9c76f.jpg")
+}
+
+.card-3{
+background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg")
+}

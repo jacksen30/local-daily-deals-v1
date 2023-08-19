@@ -1,12 +1,14 @@
- // JavaScript to toggle card rotation on click
- const cards = document.querySelectorAll(".card");
+// JavaScript to toggle card rotation on click
 
- cards.forEach(card => {
-   card.addEventListener("click", function() {
-     card.classList.toggle("is-flipped");
-   });
- 
-   card.addEventListener("touchstart", function() {
-     card.classList.toggle("is-flipped");
-   });
- });
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+  const toggleButtons = card.querySelectorAll(".toggle-button");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      card.classList.toggle("is-flipped");
+    });
+  });
+});
+

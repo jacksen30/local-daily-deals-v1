@@ -6,10 +6,7 @@
   box-sizing: border-box;
 }
 
-
-
 /* navigation styles start here */
-
 header {
   background: var(--background);
   text-align: center;
@@ -127,9 +124,7 @@ nav a:hover {
   }
 
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
-
-    /* the following lines are not from my video, but add Edge support */
+  /* the following lines are for nav at desktop and larger viewports, Edge Browser supported */
     position: absolute;
     text-align: left;
     transition: none;
@@ -138,7 +133,6 @@ nav a:hover {
     top: 35%;
     left: initial;
     /* end Edge support stuff */
-
     grid-column: 3 / 3;
     display: grid;
     justify-content: flex-end;
@@ -175,3 +169,4 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1,1);
   }
+}

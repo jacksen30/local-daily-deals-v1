@@ -30,8 +30,10 @@ body{
 
 .card{
   background: white;
-  width: 300px;
-  height: 465px;
+ /* width: 300px; */
+ /* height: 465px; */
+  width: 320px;
+  height: 480px;
   margin: 10px;
   border-radius: 12px;
   transform-style: preserve-3d;
@@ -49,6 +51,10 @@ body{
 .card p{
   padding: 10px;
   font-size: 18px;
+}
+
+.card .fine-print-text {
+  font-size: 14px;
 }
 
 .toggle-button {
@@ -73,6 +79,16 @@ body{
 
 .toggle-button-back {
   background-color: rgba(18, 142, 220, 0.8);
+}
+
+.card-back__title {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.barcode-img {
+  display: flex;
+  margin: 8px auto;
 }
 
 .toggle-button-back:hover {

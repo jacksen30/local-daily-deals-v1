@@ -88,6 +88,7 @@ body{
 
 .barcode-img {
   display: flex;
+  height: 100px;
   margin: 8px auto;
 }
 

@@ -1,0 +1,39 @@
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-wrapper div {
+    display: flex;
+}
+
+.hero-wrapper div img {
+    /* margin-top: 50px; */
+    width: 70%;
+    /* margin-left: auto; */
+    margin: 50px auto 10px auto;
+}
+
+.hero-wrapper p {
+    color: white;
+    width: 85%;
+    font-family: 'Roboto', sans-serif;      
+}
+
+.hero-wrapper .p1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #fb6100;
+}
+
+.p1 span {
+    color: rgba(22, 190, 48, 0.8);
+}
+
+.hero-wrapper .p2 {
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fb6100;
+}

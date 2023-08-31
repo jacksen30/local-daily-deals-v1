@@ -1,9 +1,10 @@
 footer{
-  position: fixed;
-  bottom: 0px;
+  position: relative; /* Fixes issue of it overlapping cards now the main section is larger with the hero img and company text */
+  /* bottom: 0px; */
   width: 100%;
   background: var(--background);
   font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
 }
 .social a{
   font-size: 40px;

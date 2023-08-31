@@ -125,11 +125,6 @@ background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e871
   transform: rotateY(180deg);
 }
 
-/* NEW HERO SECTION - CURRENTLY HIDDEN ON DESKTOP */
-.hero-wrapper {
-  display: none;
-}
-
 @media (max-width: 450px) {
   .card{
     background: white;
@@ -139,10 +134,5 @@ background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e871
 
   .cardcontainer{
     padding: 60px 0 60px 0;
-  }
-
-  /* NEW HERO SECTION - DISPLAY ON MOBILE ONLY */
-  .hero-wrapper {
-    display: flex;
   }
 }

@@ -25,7 +25,8 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 75px;
+  /* padding-top: 75px; */  /* Not required now that the hero-wrapper has a height: 100vh; */
+  padding-bottom: 25px;
 }
 
 .card{
@@ -130,9 +131,5 @@ background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e871
     background: white;
     width: 350px;
     margin: 25px 0;
-  }
-
-  .cardcontainer{
-    padding: 60px 0 60px 0;
   }
 }

@@ -1,39 +1,50 @@
-footer{
-  position: relative; /* Fixes issue of it overlapping cards now the main section is larger with the hero img and company text */
-  /* bottom: 0px; */
+footer {
+  position: relative;
   width: 100%;
   background: var(--background);
   font-family: 'Poppins', sans-serif;
-  margin-top: 50px;
+  padding-bottom: 15px;
 }
-.social a{
-  font-size: 40px;
-  margin: 12px;
-  color: blue;
 
+footer ul {
+  list-style: none;
 }
-.main-content{
+
+.main-content {
   display: flex;
+  flex-direction: column;
 }
 
-.main-content .box{
-  flex-basis: 50%;
-  padding: 10px 20px;
-}
+.main-content .box {
+    flex-basis: 50%;
+    margin: 5px 0;
+    padding: 10px 20px;
+  }
 
-.box h2{
+.box h2 {
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.box .content{
+.box .content {
   margin: 20px 0 0 0;
+  padding-top: 10px;
   position: relative;   /* This line is only required if using the below stylized underlines */
 }
 
+.left .content p {
+  text-align: justify;
+}
+
+.social a {
+  font-size: 40px;
+  margin: 12px;
+  color: blue;
+}
+
 /* Start of title stylized underlines - helps make footer more readable on mobile */
-.box .content:before{
+.box .content:before {
   position: absolute;
   content: '';
   top: -10px;
@@ -41,7 +52,8 @@ footer{
   width: 100%;
   background: #1a1a1a;
 }
-.box .content:after{
+
+.box .content:after {
   position: absolute;
   content: '';
   height: 2px;
@@ -51,26 +63,9 @@ footer{
 }
 /* End of title stylized underlines - helps make footer more readable on mobile */
 
-.left .content p{
-  text-align: justify;
-}
+@media screen and (min-width: 900px) {
 
-.right .content ul {
-  list-style: none;
-}
-
-@media screen and (max-width: 900px) {
-  footer{
-    position: relative;
-    bottom: 0px;
-  }
-
-  .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .main-content .box{
-    margin: 5px 0;
+  .main-content {
+    flex-direction: row;
   }
 }

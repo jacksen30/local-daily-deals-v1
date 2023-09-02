@@ -4,38 +4,44 @@
   margin: 0;
 }
 
-body {
+body{
   background-color: rgb(27, 27, 27);
   min-height: 100%;
 }
 
-.logo {
+.logo{
   padding-left: 10px;
 }
 
-.card h2,
-.card h3 {
+.card h2{
   padding-left: 10px;
 }
 
-.cardcontainer {
+.card h3{
+  padding-left: 10px;
+}
+
+.cardcontainer{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* padding-top: 75px; */  /* Not required now that the hero-wrapper has a height: 100vh; */
   padding-bottom: 25px;
 }
 
-.card {
+.card{
   background: white;
-  width: 350px;
+ /* width: 300px; */
+ /* height: 465px; */
+  width: 320px;
   height: 480px;
-  margin: 25px 0;
+  margin: 10px;
   border-radius: 12px;
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
 
-.card-image {
+.card-image{
   background-color: yellow;
   height: 150px;
   margin-bottom: 15px;
@@ -43,7 +49,7 @@ body {
   border-radius: 12px 12px 0 0;
 }
 
-.card p {
+.card p{
   padding: 10px;
   font-size: 18px;
 }
@@ -55,7 +61,7 @@ body {
 .toggle-button {
   background-color: rgba(22, 190, 48, 0.8);
   color: white;
-  padding: 10px;
+  padding: 10px 10px;
   display: block;
   text-align: center;
   font-weight: 600;
@@ -66,6 +72,10 @@ body {
   width: 70%;
   margin: 5px auto;
   cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: rgba(22, 190, 48, 0.9);
 }
 
 .toggle-button-back {
@@ -83,17 +93,22 @@ body {
   margin: 8px auto;
 }
 
-.card-1 {
-  background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg");
+.toggle-button-back:hover {
+  background-color: rgba(18, 142, 220, 0.9);
 }
 
-.card-2 {
+.card-1{
+  background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg");
+  }
+
+.card-2{
   background-image: url("https://www.simplyrecipes.com/thmb/1SXZ_F1GC6ww_ppWnrdbKgHi9fQ=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Butter-Chicken-LEAD-2-6ca76f24bbe74114a09958073cb9c76f.jpg")
 }
 
-.card-3 {
+.card-3{
 background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg")
 }
+
 
 /* Styles for the front and back sides of the card */
 .card .card-front,
@@ -111,16 +126,10 @@ background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e871
   transform: rotateY(180deg);
 }
 
-@media (min-width: 680px) {
-  .card {
-    margin-right: 30px;
+@media (max-width: 450px) {
+  .card{
+    background: white;
+    width: 350px;
+    margin: 25px 0;
   }
-
-  .toggle-button:hover {
-    background-color: rgba(22, 190, 48, 0.9);
-  }
-
-  .toggle-button-back:hover {
-    background-color: rgba(18, 142, 220, 0.9);
-  } 
 }

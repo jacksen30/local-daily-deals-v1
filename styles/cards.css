@@ -26,9 +26,11 @@ body {
 }
 
 .card {
+  position: relative; /* Added so that I can use position absolute to ensure toggle button alignment */
   background: white;
   width: 350px;
-  height: 480px;
+  /* height: 480px; */
+  height: 510px;
   margin: 25px 0;
   border-radius: 12px;
   transform-style: preserve-3d;
@@ -37,7 +39,7 @@ body {
 
 .card-image {
   background-color: yellow;
-  height: 150px;
+  height: 180px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 12px 12px 0 0;
@@ -66,6 +68,11 @@ body {
   width: 70%;
   margin: 5px auto;
   cursor: pointer;
+  /* The below properties ensure consistant alignment of the .toggle-button across cvards and across .card-front and .card-back */
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%); /* To ensure it stays centered */
 }
 
 .toggle-button-back {
@@ -92,7 +99,7 @@ body {
 }
 
 .card-3 {
-background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg")
+background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e87182e3217a-coffee.jpg");
 }
 
 /* Styles for the front and back sides of the card */
@@ -100,6 +107,7 @@ background-image: url("https://www.milesteaandcoffee.com/userfiles/article/5e871
 .card .card-back {
   position: absolute;
   backface-visibility: hidden;
+  height: 100%; /* Equalizes height, as a descrepancy was causing misalignment of the toggle-buttons on flip */
 }
 
 .card .card-back {

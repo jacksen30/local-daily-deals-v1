@@ -1,76 +1,53 @@
-.hero-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-}
-
-.hero__img-wrapper {
-    display: flex;
-}
-
-.hero-wrapper div img {
-    width: 70%;
-    margin: 50px auto 10px auto;
-}
-
-.hero-wrapper p {
-    color: white;
-    width: 85%;
-    font-family: 'Roboto', sans-serif;      
-}
-
-.hero-wrapper .p1 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #fb6100;
-}
-
-.p1 span {
-    color: rgba(22, 190, 48, 0.8);
-}
-
-.hero-wrapper .p2 {
-    margin-top: 18px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fb6100;
-}
-
-
-.hero-wrapper .p3 {
-    margin-top: 18px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fb6100;
-}
-/* NEW HERO SECTION - CURRENTLY 'NOT' HIDDEN ON DESKTOP */
-.hero-wrapper {
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-@media (max-width: 450px) {
-    /* NEW HERO SECTION - DISPLAY ON MOBILE ONLY */
-    /* Now that height : 100vh; is set above will need to reformat */
     
     .hero-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .hero__img-wrapper {
+        display: flex;
     }
     
-    /* trying to align hero p div below */
+    .hero-wrapper div img {
+        width: 70%;
+        margin: 50px auto 10px auto;
+    }
+
     .p-wrapper {
-        display:flex;
+        display: flex;
         flex-direction: column;
         width: 85%;
         margin: 0 auto;
         text-align: left;
         padding-left: 30px; /* Theres got to be a better way to aligh the text then this - USED AS TEMP FIX ONLY */
     }
-  }
+
+    .hero-wrapper p {
+        margin-top: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fb6100;
+        width: 85%; 
+    }
+    
+    .hero-wrapper .p1 {
+        font-size: 26px;
+    }
+    
+    .p1 span {
+        color: rgba(22, 190, 48, 0.8);
+    }
+
+@media (min-width: 800px) {
+
+    .hero-wrapper {
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+}
+    

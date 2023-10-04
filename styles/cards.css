@@ -78,6 +78,7 @@ body {
 .toggle-button-back {
   background-color: rgba(18, 142, 220, 0.8);
   display: flex;
+  align-self: flex-start;
 }
 
 .card-back__title {
